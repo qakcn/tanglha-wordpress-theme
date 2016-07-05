@@ -1,0 +1,148 @@
+/**
+ * Styles for post, page, attachement pages
+ */
+
+@mixin link {
+    a {
+        color: #5599B2;
+        &:hover {
+            color: #46AECE;
+        }
+    }
+}
+
+article.hentry p.post-info.post-comment {
+    display: none;
+}
+
+/* Comments */
+section#comments {
+    margin: 1em 0;
+    box-shadow: 1px 1px 2px 0 $shadowcolor;
+    padding: 1em;
+    background-color: $secondary_bgcolor;
+}
+
+section#comments h2 {
+    margin: 0.6667em 0;
+}
+
+ol.comment-list {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0;
+        &.depth-1 {
+            border-bottom: 1px solid $bdrcolor;
+            margin: 0;
+            padding: 1em 0;
+            &:nth-child(1) {
+                border-top: 1px solid $bdrcolor;
+            }
+            &.thread-even {
+                border-left: 1px solid $bdrcolor;
+            }
+            &.thread-odd {
+                border-right: 1px solid $bdrcolor;
+            }
+        }
+        &.comment.bypostauthor > article.comment-body footer.comment-meta div.comment-author .fn {
+            color: darkorange;
+            font-weight: bold;
+            a {
+                @extend .fn
+            }
+        }
+        &.parent > article.comment-body {
+            margin: 0 1em 1em;
+        }
+        &.pingback {
+            font-size: 0.8em;
+            background-color: $bgcolor;
+            article.comment-body div.comment-content {
+                margin-left: 0;
+                p {
+                    margin: 0;
+                }
+            }
+            footer.comment-meta div.comment-metadata, ol.comment-list li.pingback div.reply {
+                display: none;
+            }
+        }
+    }
+    ol.children {
+        padding: 0;
+        margin: 0 1em;
+        list-style: none;
+        border-left: 0.25em solid $bdrcolor;
+    }
+    article.comment-body {
+        margin: 0 1em;
+        footer.comment-meta {
+            div.comment-author{
+                img.avatar {
+                    width: 5em;
+                    height: auto;
+                    margin-right: 1em;
+                    border-radius: 50%;
+                    float: left;
+                }
+                span.says {
+                    color: #666;
+                    font-size: 0.8em;
+                }
+            }
+            div.comment-metadata {
+                font-size: 0.8em;
+                @include link;
+            }
+        }
+        div.comment-content {
+            margin-left: 6em;
+        }
+        div.reply {
+            font-size: 0.8em;
+            @include link;
+        }
+    }
+    div#respond {
+        margin: 0;
+        padding: 1em;
+        h3 {
+            margin: 0.7273em 0;
+        }
+        p {
+            color: $tertius_color;
+            font-size: 0.8em;
+            @include link;
+        }
+    }
+}
+
+
+textarea#comment, input#author, input#email, input#url {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid $bdrcolor;
+    background-color: $bgcolor;
+    resize: vertical;
+    &:focus,&:hover {
+        background-color: $secondary_bgcolor;
+        border-color: $input_bdrcolor;
+        box-shadow: 0 0 2px 0 $input_bdrcolor inset;
+    }
+}
+
+input#submit {
+    padding: 0.5em;
+    border: 1px solid $bdrcolor;
+    background-color: bgcolor;
+    color: $color;
+    &:hover {
+        color: $input_hover_color;
+        border-color: $input_bdrcolor;
+        background-color: $input_bdrcolor;
+    }
+}

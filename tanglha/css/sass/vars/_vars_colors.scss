@@ -1,0 +1,60 @@
+/* main color */
+$color: #000;
+$secondary_color: #333;
+$tertius_color: #666;
+$bgcolor_no: #eee;
+$bgcolor: rgba($bgcolor_no, 0.8);
+$secondary_bgcolor_no: #f8f8f8;
+$secondary_bgcolor: rgba($secondary_bgcolor_no, 0.8);
+$bdrcolor: #ccc;
+$shadowcolor: rgba(#000, 0.3);
+
+$body_bgcolor: $bgcolor;
+$selection_bgcolor: #C6E3FF;
+
+$link_color: #006892;
+$secondary_link_color: #5599B2;
+$link_hover_color: #46AECE;
+$secondary_link_hover_color: #46AECE;
+
+$mark_bgcolor: rgba(#fff9c0, 0.8);
+
+$code_color: #333;
+$code_bgcolor_no: #ddd;
+$code_bgcolor: rgba($code_bgcolor_no, 0.8);
+
+$codeview_color: #333;
+$codeview_bdrcolor: #808080;
+$codeview_bgcolor_no: #ddd;
+$codeview_bgcolor: rgba($codeview_bgcolor_no, 0.8);
+$codeview_selection_bgcolor: $selection_bgcolor;
+
+
+$header_bar_color: #fff;
+$header_bar_bgcolor: dodgerblue;
+
+$search_bar_bgcolor: slateblue;
+
+$input_hover_color: #fff;
+$input_bdrcolor: #46aece;
+
+$article_header_color: $link_color;
+$article_header_hover_color: $link_hover_color;
+
+$comment_count_color: $link_color;
+$comment_count_bgcolor: #ddd;
+$comment_count_hover_color: $link_hover_color;
+$comment_count_hover_bgcolor: #e6e6e6;
+
+$tag_color: $link_color;
+$tag_bgcolor: #ddd;
+$tag_hover_color: $link_hover_color;
+$tag_hover_bgcolor: #e6e6e6;
+
+$page_bgcolor: #aaa;
+$page_hover_color: #fff;
+
+$footer_bgcolor_no: #333;
+$footer_bgcolor: rgba($footer_bgcolor_no, 0.8);
+$footer_color: #f8f8f8;
+$footer_link_color: #bce8f6;

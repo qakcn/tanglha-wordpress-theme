@@ -1,0 +1,14 @@
+/* Common styles for archive page */
+
+div.archive-header {
+    background-color: $secondary_bgcolor;
+    box-shadow: 1px 1px 4px 0 $shadowcolor;
+    margin: 1em 0;
+    padding: 1em;
+}
+div.archive-header h1 {
+    margin: 0;
+}
+div.archive-header p {
+    margin: 0;
+}

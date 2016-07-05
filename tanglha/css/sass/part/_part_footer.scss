@@ -1,0 +1,24 @@
+/* Footer */
+footer {
+    .wrapper {
+        max-width: $max_width;
+        margin: 0 auto;
+    }
+    a {
+        color: $footer_link_color;
+    }
+    &.main {
+        font-size: 0.8em;
+        width: 100%;
+        max-width: none;
+        box-shadow: 1px 1px 2px 0 $shadowcolor;
+        background-color: $footer_bgcolor;
+        color: $footer_color;
+        p {
+            margin: 0.25em;
+        }
+        div.wrapper {
+            padding: 1.25em;
+        }
+    }
+}

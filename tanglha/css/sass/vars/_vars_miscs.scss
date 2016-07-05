@@ -1,0 +1,9 @@
+/* font variables */
+$chinesefonts: 'Microsoft YaHei', 'Noto Sans CJK', 'Source Han Sans', 'PingFang SC', 'PingFang TC', STXihei, STHeiti;
+$normalfonts: Roboto, $chinesefonts, sans-serif;
+
+/* others */
+$min_width: 300px;
+$max_width: 1000px;
+
+$transition_params: 0.2s cubic-bezier(0.79, 0.14, 0.15, 0.86) 0s;

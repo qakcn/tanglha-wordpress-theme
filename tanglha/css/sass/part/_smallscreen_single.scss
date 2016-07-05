@@ -1,0 +1,54 @@
+
+    article {
+        &.hentry {
+            margin: 0.5em 0;
+
+            section.entry {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            p.post-info {
+                &.post-metadata {
+                    .author, time, .category {
+                        display: inline-block;
+                    }
+                }
+                &.post-tags {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    /* Comments */
+    section#comments {
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+
+    ol.comment-list li.depth-1 {
+        padding: 0.5em 0;
+    }
+
+    ol.comment-list ol.children {
+        margin: 0 0.5em;
+    }
+
+    ol.comment-list article.comment-body {
+        margin: 0 0.5em;
+    }
+    ol.comment-list li.parent > article.comment-body {
+        margin: 0 0.5em 0.5em;
+    }
+    ol.comment-list article.comment-body footer.comment-meta div.comment-author img.avatar {
+        width: 3em;
+        margin-right: 0.5em;
+    }
+    ol.comment-list article.comment-body div.comment-content {
+        margin-left: 3.5em;
+    }
+    ol.comment-list div#respond {
+        padding: 0.5em;
+    }

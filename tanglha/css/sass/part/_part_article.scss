@@ -1,0 +1,157 @@
+/* Article */
+article {
+    &.hentry {
+        margin: 1em 0;
+        box-shadow: 1px 1px 4px 0 $shadowcolor;
+        background-color: $secondary_bgcolor;
+        header {
+            border-bottom: 1px solid $bdrcolor;
+            padding: 1em 0;
+            margin: 0 1em;
+            h2 {
+                margin: 0;
+                a {
+                    text-decoration: none;
+                    color: $article_header_color;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $article_header_hover_color;
+                    }
+                }
+            }
+        }
+        footer {
+            /* border-top: 1px solid $bdrcolor;*/
+            background-color: $bgcolor;
+            padding: 1em;
+        }
+        p.post-info {
+            margin: 0;
+            font-size: 0.8em;
+            color: $tertius_color;
+            a {
+                color: $secondary_link_color;
+                &:hover {
+                    color: $secondary_link_hover_color;
+                }
+            }
+            b {
+                color: $tertius_color;
+            }
+            .author, time, .category {
+                margin-right: 1em;
+                &::before {
+                    font-family: iconfont;
+                }
+            }
+            .author::before {
+                content: $author;
+            }
+            time::before {
+                content: $time;
+            }
+            .category::before {
+                content: $category;
+            }
+            &.post-tags {
+                line-height: 150%;
+                &::before {
+                    content: $tag;
+                    font-family: iconfont;
+                }
+                a {
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    margin-right: 0.5em;
+                    min-width: 1em;
+                    line-height: 120%;
+                    text-align: center;
+                    background-color: $tag_bgcolor;
+                    border-radius: 1em;
+                    color: $tag_color;
+                    text-decoration: none;
+                    &:hover {
+                        color: $tag_hover_color;
+                        background-color: $tag_hover_bgcolor;
+                    }
+                }
+            }
+            &.post-comment {
+                line-height: 150%;
+                &::before {
+                    content: $comment;
+                    font-family: iconfont;
+                }
+                a {
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    min-width: 1em;
+                    line-height: 120%;
+                    text-align: center;
+                    background-color: $comment_count_bgcolor;
+                    border-radius: 1em;
+                    color: $comment_count_color;
+                    text-decoration: none;
+                    &:hover {
+                        color: $comment_count_hover_color;
+                        background-color: $comment_count_hover_bgcolor;
+                    }
+                }
+            }
+        }
+        section.entry {
+            padding: 0 1em;
+            line-height: 150%;
+            span.more {
+                font-size: bolder;
+            }
+
+            counter-reset: h3c;
+            counter-reset: h4c;
+            counter-reset: h5c;
+            counter-reset: h6c;
+            h3 {
+                counter-reset: h4c;
+                counter-reset: h5c;
+                counter-reset: h6c;
+                counter-increment: h3c;
+                &::before {
+                    margin-right: 0.5em;
+                    content: counter(h3c) ".";
+                }
+            }
+            h4 {
+                counter-reset: h5c;
+                counter-reset: h6c;
+                counter-increment: h4c;
+                &::before {
+                    margin-right: 0.5em;
+                    content: counter(h3c) "." counter(h4c) ".";
+                }
+            }
+            h5 {
+                counter-reset: h6c;
+                counter-increment: h5c;
+                &::before {
+                    margin-right: 0.5em;
+                    content: counter(h3c) "." counter(h4c) "." counter(h5c) ".";
+                }
+            }
+            h6 {
+                counter-increment: h6c;
+                &::before {
+                    margin-right: 0.5em;
+                    content: counter(h3c) "." counter(h4c) "." counter(h5c) "." counter(h6c) ".";
+                }
+            }
+
+        }
+    }
+    &.sticky {
+        header h2::before {
+            font-family: iconfont;
+            color: #f30;
+            content: $pin;
+        }
+    }
+}

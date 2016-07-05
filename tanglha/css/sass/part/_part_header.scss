@@ -1,0 +1,84 @@
+@mixin barbutton {
+    @include box-sizing(border-box);
+    border: none;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    color: $header_bar_color;
+    font-size: 1.2em;
+    padding: 0;
+    width: 3em / 1.2em * 1em;
+    line-height: 3em / 1.2em * 100%;
+    text-decoration: none;
+    outline: none;
+    font-family: iconfont;
+}
+
+/* Header */
+aside#global-actionbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-width: $min_width;
+    background-color: $header_bar_bgcolor;
+    box-shadow: 0 1px 8px 0 $shadowcolor;
+    z-index: 9997;
+    button {
+        @include barbutton;
+    }
+    h1, p{
+        @include resetbox;
+        display: inline-block;
+        vertical-align: bottom;
+        color: $header_bar_color;
+        font-family: Sawasdee, $chinesefonts, sans-serif;
+        font-size: 1.5em;
+        line-height: 200%;
+    }
+    p {
+        font-size: 0.8em;
+        line-height: 375%;
+    }
+    form#search-form {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include display-flex;
+        input {
+            &.search-field {
+                @include box-sizing(border-box);
+                font-size: 1em;
+                color: $color;
+                background-color: $bgcolor_no;
+                margin: 0.5em 0;
+                padding: 0 0.5em;
+                border: none;
+                @include flex-grow(1);
+                line-height: 200%;
+                width: 10em;
+                transition: width $transition_params;
+                text-overflow: ellipsis;
+                box-shadow: 0 0 5px 0 $header_bar_bgcolor inset;
+                &:focus, &:hover {
+                    background-color: $secondary_bgcolor_no;
+                    width: 20em;
+                }
+            }
+            &.search-submit{
+                @include barbutton;
+            }
+        }
+    }
+}
+header.main.blur {
+    @include filter(none);
+    > * {
+        @extend .blur;
+    }
+}
+
+header.main img {
+    width: 100%;
+    box-shadow: 1px 1px 4px 0 $shadowcolor;
+}

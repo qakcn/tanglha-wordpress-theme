@@ -1,0 +1,178 @@
+/* Sidebar styles */
+
+div#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 9998;
+}
+div#overlay.hide {
+    display: none;
+    opacity: 0;
+}
+aside#global-menu {
+    width: 50%;
+    min-width: 275px;
+    max-width: 600px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    box-shadow: 1px 0 8px 0 $shadowcolor;
+    transition: left $transition_params;
+    z-index: 9999;
+    font-size: 1.5em;
+    overflow: auto;
+    font-family: Sawasdee, $chinesefonts, sans-serif;
+    &.hide {
+        left: -650px;
+    }
+    dl {
+        list-style: none;
+        @include resetbox;
+    }
+    dt {
+        margin: 0;
+        position: relative;
+        &:hover {
+            background-color: #eee;
+        }
+        &.submenu {
+            &::after {
+                font-family: iconfont;
+                content: $down_arrow;
+                position: absolute;
+                padding: 0.5em;
+                bottom: 0;
+                right: 0;
+                transition: transform $transition_params;
+            }
+            &.submenu-expan::after {
+                transform: rotate(180deg);
+            }
+        }
+        &.user {
+            background-image: url('../images/user.svg');
+            background-size: 100% 100%;
+            padding: 0.5em;
+            padding-left: 1.5em;
+            padding-top: 3em;
+            img {
+                display: inline-block;
+                vertical-align: top;
+                border-radius: 50%;
+                width: 4em;
+                height: 4em;
+                overflow: hidden;
+            }
+            div.info {
+                display: inline-block;
+                vertical-align: top;
+                height: 3em;
+                padding: 0.5em;
+                text-shadow: 1px 1px 1px #f8f8f8;
+                div.name {
+                    font-size: 1em;
+                }
+                div.loginname {
+                    font-size: 0.8em;
+                     color: #444;
+                }
+            }
+        }
+        &.nomenu {
+            padding: 0;
+        }
+        a {
+            display: block;
+            padding: 0.5em;
+            padding-left: 1.5em;
+            text-decoration: none;
+            color: black;
+            &::before {
+                font-family: iconfont;
+            }
+        }
+        &.home a::before {
+            content: $home;
+        }
+        &.category a::before {
+            content: $category;
+        }
+        &.page a::before {
+            content: $page;
+        }
+        &.link a::before {
+            content: $link;
+        }
+        &.icon-archive a::before {
+            content: $archive;
+        }
+        &.icon-about a::before {
+            content: $about;
+        }
+        &.icon-faq a::before {
+            content: $faq;
+        }
+    }
+    dd {
+        margin: 0;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: height $transition_params;
+        ul.submenu {
+            @include resetbox;
+            list-style: none;
+            li {
+                padding: 0;
+                background-color: #ddd;
+                a {
+                    /* @extend dt a; */
+                    display: block;
+                    padding: 0.5em;
+                    padding-left: 2.5em;
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        background-color: #eee;
+                    }
+                    &::before {
+                        font-family: iconfont;
+                    }
+                }
+                &.current_page_item a {
+                    padding-left: 1em;
+                    border-left: 0.5em solid mediumseagreen;
+                }
+                &.current-cat a {
+                    padding-left: 2em;
+                    border-left: 0.5em solid mediumseagreen;
+                }
+                &.admin a::before {
+                    content: $admin;
+                }
+                &.login a::before {
+                    content: $login;
+                }
+                &.logout a::before {
+                    content: $logout;
+                }
+                &.icon-archive a::before {
+                    content: $archive;
+                }
+                &.icon-about a::before {
+                    content: $about;
+                }
+                &.icon-faq a::before {
+                    content: $faq;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "part/common_miscs";
+
+.clear {
+    clear: both;
+}
+
+ul.list {
+    @include column-count(2);
+    list-style: none;
+    color: #666;
+}
+@media screen and (max-width: 600px) {
+    ul.list {
+        @include column-count(1);
+    }
+}
+
+ul.list li::before {
+    color: #999;
+    content: '\25C6';
+    padding-right: 0.5em;
+}
+
+ul.children {
+    list-style: none;
+    padding: 0;
+}
+
+ul.children li::before {
+    content: '\251C\2500';
+    padding-right: 1em;
+}
+ul.children li:last-child::before {
+    content: '\2514\2500';
+}
+ul.tag-list {
+    padding: 0;
+    display: block;
+    column-count: auto;
+    -moz-column-count: auto;
+    -webkit-column-count: auto;
+}
+ul.tag-list li {
+    display: inline-block;
+    line-height: normal;
+    margin: 0.5em 0.25em;
+    vertical-align: middle;
+    a {
+        display: inline-block;
+        padding: 0 0.5em;
+        min-width: 1em;
+        line-height: 120%;
+        text-align: center;
+        background-color: $tag_bgcolor;
+        border-radius: 1em;
+        color: $tag_color;
+        text-decoration: none;
+        &:hover {
+            color: $tag_hover_color;
+            background-color: $tag_hover_bgcolor;
+        }
+    }
+}

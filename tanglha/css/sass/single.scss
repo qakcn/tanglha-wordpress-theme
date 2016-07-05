@@ -1,0 +1,17 @@
+@import "part/common_miscs";
+
+@import "part/part_global";
+
+@import "part/part_header";
+
+@import "part/part_article";
+@import "part/common_single";
+@import "part/part_paginate";
+
+@import "part/part_footer";
+@import "part/part_sidebar";
+
+@media screen and (max-width: 600px) {
+    @import "part/smallscreen_common";
+    @import "part/smallscreen_single";
+}

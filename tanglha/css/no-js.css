@@ -1,0 +1,66 @@
+/* style for no javascript */
+.no-js body {
+    margin: 0;
+    position: relative;
+    min-width: 300px;
+    padding-right: 16em;
+}
+.no-js aside#global-button {
+    display: none;
+}
+.no-js aside#global-actionbar {
+    position: absolute;
+}
+.no-js aside#global-actionbar form#search-form {
+    padding: 0.5em;
+    display: block;
+}
+.no-js aside#global-actionbar form#search-form input {
+    padding: 0.2em;
+}
+.no-js aside#global-actionbar form#search-form input.search-field {
+    width: 10em;
+}
+.no-js aside#global-actionbar #ga-main, .no-js aside#global-actionbar #ga-search {
+    display: none;
+}
+.no-js aside#global-menu.hide {
+    font-size: 1em;
+    display: block;
+    position: absolute;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    top: 5em;
+    width: 8.3333em;
+    z-index: auto;
+}
+.no-js aside#global-menu dd {
+    display: block;
+}
+.no-js .main {
+    min-width: auto;
+    margin: 0;
+    max-width: none;
+}
+.no-js header.main {
+    text-align: center;
+}
+.no-js #header-image {
+    max-width: 1000px;
+}
+@media screen and (max-width: 600px) {
+    .no-js aside#global-actionbar form#search-form {
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: 0;
+        padding: 0.5em;
+        font-size: 1em;
+        min-width: auto;
+    }
+    .no-js aside#global-actionbar form#search-form input.search-field {
+        width: 10em;
+        max-width: none;
+    }
+}

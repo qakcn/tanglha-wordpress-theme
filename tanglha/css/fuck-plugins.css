@@ -1,0 +1,30 @@
+
+/* Fuck YARPP */
+.yarpp-related {
+    overflow: hidden !important;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+.yarpp-related a {
+    font-weight: lighter !important;
+}
+.yarpp-related a:hover {
+    text-decoration: underline !important;
+}
+.yarpp-related h3 {
+    font-weight: bolder !important;
+    padding: 0 !important;
+    font-size: 1.375em !important;
+    text-transform: none !important;
+}
+.yarpp-related h3::before {
+    content: none !important;
+}
+.yarpp-related .yarpp-promote {
+    text-indent: 0 !important;
+    font-size: 0 !important;
+}
+.yarpp-related-none {
+    display: none;
+}

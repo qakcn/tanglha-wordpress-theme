@@ -1,0 +1,153 @@
+/* Common */
+body {
+    background-color: $body_bgcolor;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    min-width: $min_width;
+    color: $color;
+
+    font-family: $normalfonts;
+    font-weight: 300;
+
+    margin-top: 3.5em;
+}
+
+*{
+    @include selection($selection_bgcolor);
+}
+
+img,iframe {
+    border: none;
+}
+
+a {
+    color: $link_color;
+    text-decoration: none;
+    &:hover {
+      color: $link_hover_color;
+      text-decoration: underline;
+    }
+}
+
+h1 {
+    font-size: 1.625em;
+    font-family: Sawasdee, $chinesefonts, sans-serif;
+    font-weight: bolder;
+}
+h2 { @extend h1; font-size: 1.5em;}
+h3 { @extend h1; font-size: 1.375em; }
+h4 { @extend h1; font-size: 1.25em;}
+h5 { @extend h1; font-size: 1.125em;}
+h6 { @extend h1; font-size: 1em;}
+
+strong,b {
+    font-weight: bolder;
+    color: #700;
+}
+
+
+mark, ins {
+    background-color: $mark_bgcolor;
+    text-decoration: none;
+}
+del.blackout {
+    background-color: $color;
+    text-decoration: none;
+}
+
+blockquote {
+    border-left: 1em solid $bdrcolor;
+    padding: 1em;
+    p {
+        margin: 0.5em 0;
+    }
+}
+
+kbd, tt, var, samp, code, pre.codeview {
+    font-family: Inconsolata, 'WenQuanYi Micro Hei Mono', monospace;
+}
+kbd {
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 0 0.5em;
+    text-align: center;
+    margin: 0 0.5em;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+code {
+    margin: 0.5em;
+    padding: 0 0.5em;
+    background-color: $code_bgcolor;
+    color: $code_color;
+}
+pre.aa {
+    font-family: 'MS PGothic', monospace;
+}
+pre code {
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+    border: 2px dotted $codeview_bdrcolor;
+    background-color: $codeview_bgcolor;
+    color: $codeview_color;
+    overflow: auto;
+    @include selection($codeview_selection_bgcolor);
+}
+
+.wp-caption {
+    /* border: 1px solid $bdrcolor; */
+    margin: 1em;
+    padding: 0.5em;
+    background-color: $bgcolor;
+}
+.wp-caption-text, .gallery-caption {
+    font-size: 0.8em;
+    color: $secondary_color;
+    text-align: center;
+}
+
+.gallery {
+    /* border: 1px solid $bdrcolor; */
+    background-color: $bgcolor;
+    margin: 1em;
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    @include display-flex;
+    .gallery-item {
+        display: inline-block;
+        margin: 1em 0 1em 1em;
+        padding: 0.5em;
+        background-color: $secondary_bgcolor;
+        /* border: 1px solid $bdrcolor; */
+        &:last-child {
+           margin-right: 1em;
+        }
+    }
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin: auto;
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+    min-width: $min_width;
+    max-width: $max_width;
+}
+.blur {
+    @include filter(blur(5px));
+}

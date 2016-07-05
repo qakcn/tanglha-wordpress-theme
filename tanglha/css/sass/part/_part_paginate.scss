@@ -1,0 +1,103 @@
+/* mixins */
+@mixin page-container {
+    text-align: center;
+    line-height: 100%;
+}
+@mixin page-link {
+    display: inline-block;
+    text-decoration: none;
+}
+@mixin page-link-border {
+    &:nth-child(odd) {
+        border-bottom: 1px solid $page_bgcolor;
+        border-right: 1px solid $page_bgcolor;
+    }
+    &:nth-child(even) {
+        border-top: 1px solid $page_bgcolor;
+        border-right: 1px solid $page_bgcolor;
+    }
+    &:nth-child(1) {
+        border-left: 1px solid $page_bgcolor;
+    }
+}
+@mixin current-and-hover {
+    background-color: $page_bgcolor;
+    color: $page_hover_color;
+}
+@mixin page-link-box {
+    padding: 0.625em 0.5em;
+    width: 1.25em;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Article pages */
+article.hentry section.page-links {
+    @include page-container;
+    margin: 1em;
+    a {
+        @include page-link;
+    }
+    span{
+        @include page-link;
+        span {
+            @include page-link-box;
+        }
+        a span:hover, > span{
+            @include current-and-hover;
+        }
+    }
+    > span {
+        @include page-link-border;
+    }
+}
+
+/* Nav pages */
+nav.post-page {
+    @include page-container;
+    width: 100%;
+    box-shadow: 1px 1px 4px 0 $shadowcolor;;
+    background-color: $secondary_bgcolor;
+    margin: 1em 0;
+    ul {
+        padding: 1em;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        overflow: hidden;
+        display: inline-block;
+        li {
+            display: block;
+            float: left;
+            @include page-link-border;
+            a {
+                @include page-link;
+                @include page-link-box;
+                &.prev {
+                    width: auto;
+                    &::before {
+                        content: $prev;
+                    }
+                }
+                &.next {
+                    width: auto;
+                    &::after {
+                        content: $next;
+                    }
+                }
+                &:hover {
+                    @include current-and-hover;
+                }
+            }
+            span {
+                @include page-link;
+                @include page-link-box;
+                &.current{
+                    @include current-and-hover;
+                }
+            }
+        }
+    }
+}
+
