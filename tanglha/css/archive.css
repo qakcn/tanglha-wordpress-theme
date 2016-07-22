@@ -20,6 +20,12 @@ body {
   margin-top: 3.5em;
 }
 
+@media screen and (max-resolution: 100dpi) {
+  /* line 18, sass/part/_part_global.scss */
+  body {
+    font-size: 14px;
+  }
+}
 /* line 53, ../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_selection.scss */
 *::-moz-selection {
   color: #000;
@@ -31,88 +37,88 @@ body {
   background-color: #C6E3FF;
 }
 
-/* line 21, sass/part/_part_global.scss */
+/* line 27, sass/part/_part_global.scss */
 img, iframe {
   border: none;
 }
 
-/* line 25, sass/part/_part_global.scss */
+/* line 31, sass/part/_part_global.scss */
 a {
   color: #006892;
   text-decoration: none;
 }
-/* line 28, sass/part/_part_global.scss */
+/* line 34, sass/part/_part_global.scss */
 a:hover {
   color: #46AECE;
   text-decoration: underline;
 }
 
-/* line 34, sass/part/_part_global.scss */
+/* line 40, sass/part/_part_global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.625em;
   font-family: Sawasdee, "Microsoft YaHei", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "PingFang TC", STXihei, STHeiti, sans-serif;
   font-weight: bolder;
 }
 
-/* line 39, sass/part/_part_global.scss */
+/* line 45, sass/part/_part_global.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 40, sass/part/_part_global.scss */
+/* line 46, sass/part/_part_global.scss */
 h3 {
   font-size: 1.375em;
 }
 
-/* line 41, sass/part/_part_global.scss */
+/* line 47, sass/part/_part_global.scss */
 h4 {
   font-size: 1.25em;
 }
 
-/* line 42, sass/part/_part_global.scss */
+/* line 48, sass/part/_part_global.scss */
 h5 {
   font-size: 1.125em;
 }
 
-/* line 43, sass/part/_part_global.scss */
+/* line 49, sass/part/_part_global.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 45, sass/part/_part_global.scss */
+/* line 51, sass/part/_part_global.scss */
 strong, b {
   font-weight: bolder;
   color: #700;
 }
 
-/* line 51, sass/part/_part_global.scss */
+/* line 57, sass/part/_part_global.scss */
 mark, ins {
   background-color: rgba(255, 249, 192, 0.8);
   text-decoration: none;
 }
 
-/* line 55, sass/part/_part_global.scss */
+/* line 61, sass/part/_part_global.scss */
 del.blackout {
   background-color: #000;
   text-decoration: none;
 }
 
-/* line 60, sass/part/_part_global.scss */
+/* line 66, sass/part/_part_global.scss */
 blockquote {
   border-left: 1em solid #ccc;
   padding: 1em;
 }
-/* line 63, sass/part/_part_global.scss */
+/* line 69, sass/part/_part_global.scss */
 blockquote p {
   margin: 0.5em 0;
 }
 
-/* line 68, sass/part/_part_global.scss */
+/* line 74, sass/part/_part_global.scss */
 kbd, tt, var, samp, code, pre.codeview {
   font-family: Inconsolata, 'WenQuanYi Micro Hei Mono', monospace;
 }
 
-/* line 71, sass/part/_part_global.scss */
+/* line 77, sass/part/_part_global.scss */
 kbd {
   border: 1px solid #ccc;
   border-radius: 10%;
@@ -124,7 +130,7 @@ kbd {
   text-transform: capitalize;
 }
 
-/* line 81, sass/part/_part_global.scss */
+/* line 87, sass/part/_part_global.scss */
 code {
   margin: 0.5em;
   padding: 0 0.5em;
@@ -132,12 +138,12 @@ code {
   color: #333;
 }
 
-/* line 87, sass/part/_part_global.scss */
+/* line 93, sass/part/_part_global.scss */
 pre.aa {
   font-family: 'MS PGothic', monospace;
 }
 
-/* line 90, sass/part/_part_global.scss */
+/* line 96, sass/part/_part_global.scss */
 pre code {
   display: block;
   margin: 0;
@@ -158,7 +164,7 @@ pre code::selection {
   background-color: #C6E3FF;
 }
 
-/* line 101, sass/part/_part_global.scss */
+/* line 107, sass/part/_part_global.scss */
 .wp-caption {
   /* border: 1px solid $bdrcolor; */
   margin: 1em;
@@ -166,14 +172,14 @@ pre code::selection {
   background-color: rgba(238, 238, 238, 0.8);
 }
 
-/* line 107, sass/part/_part_global.scss */
+/* line 113, sass/part/_part_global.scss */
 .wp-caption-text, .gallery-caption {
   font-size: 0.8em;
   color: #333;
   text-align: center;
 }
 
-/* line 113, sass/part/_part_global.scss */
+/* line 119, sass/part/_part_global.scss */
 .gallery {
   /* border: 1px solid $bdrcolor; */
   background-color: rgba(238, 238, 238, 0.8);
@@ -185,7 +191,7 @@ pre code::selection {
   display: -webkit-flex;
   display: flex;
 }
-/* line 120, sass/part/_part_global.scss */
+/* line 126, sass/part/_part_global.scss */
 .gallery .gallery-item {
   display: inline-block;
   margin: 1em 0 1em 1em;
@@ -193,28 +199,28 @@ pre code::selection {
   background-color: rgba(248, 248, 248, 0.8);
   /* border: 1px solid $bdrcolor; */
 }
-/* line 126, sass/part/_part_global.scss */
+/* line 132, sass/part/_part_global.scss */
 .gallery .gallery-item:last-child {
   margin-right: 1em;
 }
 
-/* line 132, sass/part/_part_global.scss */
+/* line 138, sass/part/_part_global.scss */
 .alignleft {
   float: left;
 }
 
-/* line 136, sass/part/_part_global.scss */
+/* line 142, sass/part/_part_global.scss */
 .alignright {
   float: right;
 }
 
-/* line 140, sass/part/_part_global.scss */
+/* line 146, sass/part/_part_global.scss */
 .aligncenter {
   display: block;
   margin: auto;
 }
 
-/* line 145, sass/part/_part_global.scss */
+/* line 151, sass/part/_part_global.scss */
 .main {
   margin: auto;
   width: 100%;
@@ -222,7 +228,7 @@ pre code::selection {
   max-width: 1000px;
 }
 
-/* line 151, sass/part/_part_global.scss */
+/* line 157, sass/part/_part_global.scss */
 .blur, header.main.blur > * {
   -webkit-filter: blur(5px);
   filter: blur(5px);
