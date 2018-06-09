@@ -15,7 +15,7 @@ body {
   background-position: 50% 0%;
   min-width: 300px;
   color: #000;
-  font-family: Roboto, "Microsoft YaHei", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "PingFang TC", STXihei, STHeiti, sans-serif;
+  font-family: Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
   font-weight: 300;
   margin-top: 3.5em;
 }
@@ -26,12 +26,12 @@ body {
     font-size: 14px;
   }
 }
-/* line 53, ../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_selection.scss */
+/* line 53, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/css3/_selection.scss */
 *::-moz-selection {
   color: #000;
   background-color: #C6E3FF;
 }
-/* line 53, ../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_selection.scss */
+/* line 53, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/css3/_selection.scss */
 *::selection {
   color: #000;
   background-color: #C6E3FF;
@@ -56,7 +56,7 @@ a:hover {
 /* line 40, sass/part/_part_global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.625em;
-  font-family: Sawasdee, "Microsoft YaHei", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "PingFang TC", STXihei, STHeiti, sans-serif;
+  font-family: Sawasdee, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
   font-weight: bolder;
 }
 
@@ -153,12 +153,12 @@ pre code {
   color: #333;
   overflow: auto;
 }
-/* line 53, ../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_selection.scss */
+/* line 53, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/css3/_selection.scss */
 pre code::-moz-selection {
   color: #000;
   background-color: #C6E3FF;
 }
-/* line 53, ../../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_selection.scss */
+/* line 53, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/css3/_selection.scss */
 pre code::selection {
   color: #000;
   background-color: #C6E3FF;
@@ -271,7 +271,7 @@ aside#global-actionbar h1, aside#global-actionbar h2, aside#global-actionbar h3,
   display: inline-block;
   vertical-align: bottom;
   color: #fff;
-  font-family: Sawasdee, "Microsoft YaHei", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "PingFang TC", STXihei, STHeiti, sans-serif;
+  font-family: Sawasdee, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
   font-size: 1.5em;
   line-height: 200%;
 }
@@ -344,86 +344,90 @@ header.main img {
 }
 
 /* Article */
-/* line 3, sass/part/_part_article.scss */
+/* line 2, sass/part/_part_article.scss */
+article {
+  font-family: Roboto Slab, Roboto, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", serif, sans-serif;
+}
+/* line 4, sass/part/_part_article.scss */
 article.hentry {
   margin: 1em 0;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: rgba(248, 248, 248, 0.8);
 }
-/* line 7, sass/part/_part_article.scss */
+/* line 8, sass/part/_part_article.scss */
 article.hentry header {
   border-bottom: 1px solid #ccc;
   padding: 1em 0;
   margin: 0 1em;
 }
-/* line 11, sass/part/_part_article.scss */
+/* line 12, sass/part/_part_article.scss */
 article.hentry header h2 {
   margin: 0;
 }
-/* line 13, sass/part/_part_article.scss */
+/* line 14, sass/part/_part_article.scss */
 article.hentry header h2 a {
   text-decoration: none;
   color: #006892;
 }
-/* line 16, sass/part/_part_article.scss */
+/* line 17, sass/part/_part_article.scss */
 article.hentry header h2 a:hover {
   text-decoration: underline;
   color: #46AECE;
 }
-/* line 23, sass/part/_part_article.scss */
+/* line 24, sass/part/_part_article.scss */
 article.hentry footer {
   /* border-top: 1px solid $bdrcolor;*/
   background-color: rgba(238, 238, 238, 0.8);
   padding: 1em;
 }
-/* line 28, sass/part/_part_article.scss */
+/* line 29, sass/part/_part_article.scss */
 article.hentry p.post-info {
   margin: 0;
   font-size: 0.8em;
   color: #666;
 }
-/* line 32, sass/part/_part_article.scss */
+/* line 33, sass/part/_part_article.scss */
 article.hentry p.post-info a {
   color: #5599B2;
 }
-/* line 34, sass/part/_part_article.scss */
+/* line 35, sass/part/_part_article.scss */
 article.hentry p.post-info a:hover {
   color: #46AECE;
 }
-/* line 38, sass/part/_part_article.scss */
+/* line 39, sass/part/_part_article.scss */
 article.hentry p.post-info b {
   color: #666;
 }
-/* line 41, sass/part/_part_article.scss */
+/* line 42, sass/part/_part_article.scss */
 article.hentry p.post-info .author, article.hentry p.post-info time, article.hentry p.post-info .category {
   margin-right: 1em;
 }
-/* line 43, sass/part/_part_article.scss */
+/* line 44, sass/part/_part_article.scss */
 article.hentry p.post-info .author::before, article.hentry p.post-info time::before, article.hentry p.post-info .category::before {
   font-family: iconfont;
 }
-/* line 47, sass/part/_part_article.scss */
+/* line 48, sass/part/_part_article.scss */
 article.hentry p.post-info .author::before {
   content: " ";
 }
-/* line 50, sass/part/_part_article.scss */
+/* line 51, sass/part/_part_article.scss */
 article.hentry p.post-info time::before {
   content: "⏲ ";
 }
-/* line 53, sass/part/_part_article.scss */
+/* line 54, sass/part/_part_article.scss */
 article.hentry p.post-info .category::before {
   content: " ";
 }
-/* line 56, sass/part/_part_article.scss */
+/* line 57, sass/part/_part_article.scss */
 article.hentry p.post-info.post-tags {
   line-height: 150%;
 }
-/* line 58, sass/part/_part_article.scss */
+/* line 59, sass/part/_part_article.scss */
 article.hentry p.post-info.post-tags::before {
   content: " ";
   font-family: iconfont;
 }
-/* line 62, sass/part/_part_article.scss */
+/* line 63, sass/part/_part_article.scss */
 article.hentry p.post-info.post-tags a {
   display: inline-block;
   padding: 0 0.5em;
@@ -436,21 +440,21 @@ article.hentry p.post-info.post-tags a {
   color: #006892;
   text-decoration: none;
 }
-/* line 73, sass/part/_part_article.scss */
+/* line 74, sass/part/_part_article.scss */
 article.hentry p.post-info.post-tags a:hover {
   color: #46AECE;
   background-color: #e6e6e6;
 }
-/* line 79, sass/part/_part_article.scss */
+/* line 80, sass/part/_part_article.scss */
 article.hentry p.post-info.post-comment {
   line-height: 150%;
 }
-/* line 81, sass/part/_part_article.scss */
+/* line 82, sass/part/_part_article.scss */
 article.hentry p.post-info.post-comment::before {
   content: " ";
   font-family: iconfont;
 }
-/* line 85, sass/part/_part_article.scss */
+/* line 86, sass/part/_part_article.scss */
 article.hentry p.post-info.post-comment a {
   display: inline-block;
   padding: 0 0.5em;
@@ -462,12 +466,12 @@ article.hentry p.post-info.post-comment a {
   color: #006892;
   text-decoration: none;
 }
-/* line 95, sass/part/_part_article.scss */
+/* line 96, sass/part/_part_article.scss */
 article.hentry p.post-info.post-comment a:hover {
   color: #46AECE;
   background-color: #e6e6e6;
 }
-/* line 102, sass/part/_part_article.scss */
+/* line 103, sass/part/_part_article.scss */
 article.hentry section.entry {
   padding: 0 1em;
   line-height: 150%;
@@ -476,53 +480,53 @@ article.hentry section.entry {
   counter-reset: h5c;
   counter-reset: h6c;
 }
-/* line 105, sass/part/_part_article.scss */
+/* line 106, sass/part/_part_article.scss */
 article.hentry section.entry span.more {
   font-size: bolder;
 }
-/* line 113, sass/part/_part_article.scss */
+/* line 114, sass/part/_part_article.scss */
 article.hentry section.entry h3 {
   counter-reset: h4c;
   counter-reset: h5c;
   counter-reset: h6c;
   counter-increment: h3c;
 }
-/* line 118, sass/part/_part_article.scss */
+/* line 119, sass/part/_part_article.scss */
 article.hentry section.entry h3::before {
   margin-right: 0.5em;
   content: counter(h3c) ".";
 }
-/* line 123, sass/part/_part_article.scss */
+/* line 124, sass/part/_part_article.scss */
 article.hentry section.entry h4 {
   counter-reset: h5c;
   counter-reset: h6c;
   counter-increment: h4c;
 }
-/* line 127, sass/part/_part_article.scss */
+/* line 128, sass/part/_part_article.scss */
 article.hentry section.entry h4::before {
   margin-right: 0.5em;
   content: counter(h3c) "." counter(h4c) ".";
 }
-/* line 132, sass/part/_part_article.scss */
+/* line 133, sass/part/_part_article.scss */
 article.hentry section.entry h5 {
   counter-reset: h6c;
   counter-increment: h5c;
 }
-/* line 135, sass/part/_part_article.scss */
+/* line 136, sass/part/_part_article.scss */
 article.hentry section.entry h5::before {
   margin-right: 0.5em;
   content: counter(h3c) "." counter(h4c) "." counter(h5c) ".";
 }
-/* line 140, sass/part/_part_article.scss */
+/* line 141, sass/part/_part_article.scss */
 article.hentry section.entry h6 {
   counter-increment: h6c;
 }
-/* line 142, sass/part/_part_article.scss */
+/* line 143, sass/part/_part_article.scss */
 article.hentry section.entry h6::before {
   margin-right: 0.5em;
   content: counter(h3c) "." counter(h4c) "." counter(h5c) "." counter(h6c) ".";
 }
-/* line 151, sass/part/_part_article.scss */
+/* line 152, sass/part/_part_article.scss */
 article.sticky header h2::before {
   font-family: iconfont;
   color: #f30;
@@ -901,7 +905,7 @@ aside#global-menu {
   z-index: 9999;
   font-size: 1.5em;
   overflow: auto;
-  font-family: Sawasdee, "Microsoft YaHei", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "PingFang TC", STXihei, STHeiti, sans-serif;
+  font-family: Sawasdee, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
 }
 /* line 32, sass/part/_part_sidebar.scss */
 aside#global-menu.hide {

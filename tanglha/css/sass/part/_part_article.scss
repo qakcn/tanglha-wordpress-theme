@@ -1,5 +1,6 @@
 /* Article */
 article {
+    font-family: $normalfonts;
     &.hentry {
         margin: 1em 0;
         box-shadow: 1px 1px 4px 0 $shadowcolor;
