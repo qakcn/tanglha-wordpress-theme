@@ -87,7 +87,7 @@ h6 {
 /* line 50, sass/part/_part_global.scss */
 strong, b {
   font-weight: bolder;
-  color: #700;
+  color: #400;
 }
 
 /* line 56, sass/part/_part_global.scss */
@@ -114,7 +114,7 @@ blockquote p {
 
 /* line 73, sass/part/_part_global.scss */
 kbd, tt, var, samp, code, pre.codeview {
-  font-family: Inconsolata, "WenQuanYi Micro Hei Mono", monospace;
+  font-family: Inconsolata, "Ubuntu Mono", monospace;
 }
 
 /* line 76, sass/part/_part_global.scss */

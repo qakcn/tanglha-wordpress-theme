@@ -1,6 +1,9 @@
 <?php
 /* Setup for theme */
 function tanglha_setup() {
+    /* Load language */
+    load_theme_textdomain('tanglha', get_template_directory() . '/languages');
+
     /* Disable Emoji */
     remove_action( 'admin_print_scripts',   'print_emoji_detection_script');
     remove_action( 'admin_print_styles',    'print_emoji_styles');

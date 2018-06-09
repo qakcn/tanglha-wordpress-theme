@@ -49,7 +49,7 @@ function tanglha_article() {
     ?>
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <header>
-            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="link to &#12302;<?php the_title(); ?>&#12303;"><?php the_title(); ?></a></h2>
+            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?=sprintf(__('link to &#12302;%s&#12303;', 'tanglha'), the_title()) ?>"><?php the_title(); ?></a></h2>
             <p class="post-info post-metadata">
                 <b class="author"><?php the_author_posts_link(); ?></b>
                 <time><?php the_time(get_option('date_format')); ?></time>
@@ -67,9 +67,9 @@ function tanglha_article() {
             <?php
                 if(is_search() || is_archive()) {
                     the_excerpt();
-                    echo '<p><a href="'.get_permalink().'" rel="bookmark" title="read more about &#12302; '.get_the_title().'&#12303;"><span class="more">read more...</span></a></p>';
+                    echo '<p><a href="'.get_permalink().'" rel="bookmark" title="'.sprintf(__('read more about &#12302;%s&#12303;', 'tanglha'), get_the_title()).'"><span class="more">'.__('read more...', 'tanglha').'</span></a></p>';
                 }else {
-                    the_content('<span class="more">read more...</span>');
+                    the_content('<span class="more">'.__('read more...', 'tanglha').'</span>');
                 }
             ?>
         </section>
@@ -112,7 +112,7 @@ function tanglha_user() {
         echo '<div class="loginname">'.$user->user_login.'</div>';
         echo '</div></dt>';
 
-        echo '<dd submenu-for="submenu-user"><ul role="menu" class="submenu"><li class="admin"><a rel="nofollow" target="_target" href="'.admin_url().'">dashboard</a></li><li class="logout">';
+        echo '<dd submenu-for="submenu-user"><ul role="menu" class="submenu"><li class="admin"><a rel="nofollow" target="_target" href="'.admin_url().'">'.__('dashboard', 'tanglha').'</a></li><li class="logout">';
         wp_loginout($_SERVER['REQUEST_URI']);
         echo '</li></ul></dd>';
     }else {
@@ -120,8 +120,8 @@ function tanglha_user() {
         echo '<dt class="user" role="menuitem" id="submenu-user" submenu="expanded">';
         echo $avatar;
         echo '<div class="info">';
-        echo '<div class="name">guest</div>';
-        echo '<div class="loginname">you\'re welcomingly welcome</div>';
+        echo '<div class="name">'.__('guest', 'tanglha').'</div>';
+        echo '<div class="loginname">'.__('you\'re welcomingly welcome', 'tanglha').'</div>';
         echo '</div></dt>';
 
         echo '<dd class="loggedout" submenu-for="submenu-user"><ul role="menu" class="submenu"><li class="login">';
@@ -136,14 +136,14 @@ function tanglha_menu() {
     echo '<dl class="menu" role="menu">';
     tanglha_user();
 
-    echo '<dt class="nomenu home" role="menuitem" aria-haspopup="false"><a rel="index" href="'.home_url().'">home</a></dt><dd></dd>';
+    echo '<dt class="nomenu home" role="menuitem" aria-haspopup="false"><a rel="index" href="'.home_url().'">'.__('home', 'tanglha').'</a></dt><dd></dd>';
 
     $categories = get_categories(array(
         'parent' => 0,
     ));
     if(count($categories)>0) {
         $catclass=is_category()?'submenu="expanded"':'submenu';
-        $cattitle=(count($categories) > 1)?'categories':'category';
+        $cattitle=_n('category','categories',count($categories),'tanglha');
         echo '<dt class="category" id="submenu-cat" '.$catclass.' role="menuitem" aria-haspopup="true"><a>'.$cattitle.'</a></dt><dd submenu-for="submenu-cat"><ul class="submenu" role="menu">';
         wp_list_categories(array(
             'orderby' => 'term_group,slug',
@@ -196,8 +196,8 @@ function tanglha_menu() {
         'orderby' => 'rating,name',
     ));
     if(count($links) > 0) {
-        $linktitle = (count($links) > 1)?'links':'link';
-            echo '<dt class="link" submenu id="submenu-bookmark" role="menuitem" aria-haspopup="true"><a>'.$linktitle.'</a></dt><dd submenu-for="submenu-bookmark"><ul class="submenu" role="menu">';
+        $linktitle = _n('link','links',count($links),'tanglha');
+        echo '<dt class="link" submenu id="submenu-bookmark" role="menuitem" aria-haspopup="true"><a>'.$linktitle.'</a></dt><dd submenu-for="submenu-bookmark"><ul class="submenu" role="menu">';
         wp_list_bookmarks(array(
             'orderby' => 'rating,name',
             'title_li' => '',
@@ -224,6 +224,6 @@ function tanglha_global_button() {
         foreach($tanglha_global_buttons as $name => $button) {
             echo '<button class="iconfont '.$button['type'].'" id="gb-'.$name.'" title="'.$button['title'].'" data-action="'.$button['action'].'" role="button">'.$button['icon'].'</button>';
         }
-        echo '<button class="iconfont" id="gb-main" title="more..." role="button" aria-haspopup="true">&#58880;</button>';
+        echo '<button class="iconfont" id="gb-main" title="'.__('more...', 'tanglha').'" role="button" aria-haspopup="true">&#58880;</button>';
     }
 }

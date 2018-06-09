@@ -1,0 +1,324 @@
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tanglha 1.0\n"
+"POT-Creation-Date: 2018-06-09 21:22+0800\n"
+"PO-Revision-Date: 2018-06-09 21:10+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:1,2,4c;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:1,2,3c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: css\n"
+"X-Poedit-SearchPathExcluded-1: fonts\n"
+"X-Poedit-SearchPathExcluded-2: images\n"
+"X-Poedit-SearchPathExcluded-3: js\n"
+"X-Poedit-SearchPathExcluded-4: languages\n"
+
+#: 404.php:13
+#, php-format
+msgid "%s not found."
+msgstr ""
+
+#: 404.php:14
+msgid ""
+"you can <a onclick=\"event.stopPropagation();document.getElementById('ga-"
+"search').click();\" href=\"javascript:void(0);\">search</a> within this site."
+msgstr ""
+
+#: 404.php:15 search.php:28
+#, php-format
+msgid ""
+"as well you can seach this site using <a href=\"https://www.google.com/"
+"search?q=site%%3A%s\">Google</a>, <a href=\"https://www.bing.com/search?"
+"q=site%%3A%s\">Bing</a>, <a href=\"https://search.yahoo.com/search?p=site%%3A"
+"%s\">Yahoo!</a> or <a href=\"https://duckduckgo.com/?q=site%%3A%s"
+"\">DuckDuckGo</a>."
+msgstr ""
+
+#: archive.php:28
+msgid "nothing here."
+msgstr ""
+
+#: comments.php:10
+msgid "no comment"
+msgstr ""
+
+#: comments.php:13
+msgid "1 comment"
+msgstr ""
+
+#: comments.php:16
+#, php-format
+msgid "%d comments"
+msgstr ""
+
+#: comments.php:39
+msgid "reply"
+msgstr ""
+
+#: comments.php:40
+#, php-format
+msgid "reply to %s"
+msgstr ""
+
+#: comments.php:41
+msgid "cancel"
+msgstr ""
+
+#: comments.php:42
+msgid "submit"
+msgstr ""
+
+#: comments.php:43
+msgid "leave your comment here"
+msgstr ""
+
+#: comments.php:44
+#, php-format
+msgid "need to be <a href=\"%s\">logged in</a> to comment."
+msgstr ""
+
+#: comments.php:45
+#, php-format
+msgid ""
+"logged in as <a href=\"%s\">%s</a> (<a href=\"%s\" title=\"log out\">log "
+"out</a>)."
+msgstr ""
+
+#: comments.php:46
+msgid "your email will keep secret. (* required)."
+msgstr ""
+
+#: comments.php:47
+#, php-format
+msgid ""
+"you can use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: <code>%s</code>."
+msgstr ""
+
+#: footer.php:6
+msgid ""
+"proudly powered by <a href=\"http://wordpress.org/\" target=\"_blank"
+"\">WordPress</a>."
+msgstr ""
+
+#: footer.php:7
+msgid "theme by <a href=\"https://tsukkomi.org/\" target=\"_blank\">qakcn</a>."
+msgstr ""
+
+#: footer.php:8
+#, php-format
+msgid "license under %s."
+msgstr ""
+
+#: footer.php:9
+#, php-format
+msgid "hosted on %s."
+msgstr ""
+
+#: footer.php:15
+#, php-format
+msgid ""
+"documented as <a href=\"http://www.miibeian.gov.cn\" target=\"_blank\">%s</"
+"a>."
+msgstr ""
+
+#: functions/customizer.functions.php:12
+msgid "page background color"
+msgstr ""
+
+#: functions/customizer.functions.php:22
+msgid "top-bar background color"
+msgstr ""
+
+#: functions/customizer.functions.php:32
+msgid "content background color"
+msgstr ""
+
+#: functions/customizer.functions.php:42
+msgid "text color"
+msgstr ""
+
+#: functions/customizer.functions.php:52
+msgid "secondary text color"
+msgstr ""
+
+#: functions/customizer.functions.php:62
+msgid "link color"
+msgstr ""
+
+#: functions/customizer.functions.php:72
+msgid "link hover color"
+msgstr ""
+
+#: functions/customizer.functions.php:82
+msgid "title color"
+msgstr ""
+
+#: functions/customizer.functions.php:92
+msgid "title hover color"
+msgstr ""
+
+#: functions/customizer.functions.php:102
+msgid "secondary link color"
+msgstr ""
+
+#: functions/customizer.functions.php:112
+msgid "secondary link hover color"
+msgstr ""
+
+#: functions/customizer.functions.php:122
+msgid "line color"
+msgstr ""
+
+#: functions/customizer.functions.php:132
+msgid "quote background color"
+msgstr ""
+
+#: functions/customizer.functions.php:142
+msgid "quote text color"
+msgstr ""
+
+#: functions/customizer.functions.php:148
+msgid "information"
+msgstr ""
+
+#: functions/customizer.functions.php:149
+msgid "gather some information that will be shown"
+msgstr ""
+
+#: functions/customizer.functions.php:158
+msgid "hosted on"
+msgstr ""
+
+#: functions/customizer.functions.php:170
+msgid "license under"
+msgstr ""
+
+#: functions/customizer.functions.php:182
+msgid "statistic code"
+msgstr ""
+
+#: functions/layout.functions.php:52
+#, php-format
+msgid "link to &#12302;%s&#12303;"
+msgstr ""
+
+#: functions/layout.functions.php:70
+#, php-format
+msgid "read more about &#12302;%s&#12303;"
+msgstr ""
+
+#: functions/layout.functions.php:70 functions/layout.functions.php:72
+msgid "read more..."
+msgstr ""
+
+#: functions/layout.functions.php:115
+msgid "dashboard"
+msgstr ""
+
+#: functions/layout.functions.php:123
+msgid "guest"
+msgstr ""
+
+#: functions/layout.functions.php:124
+msgid "you're welcomingly welcome"
+msgstr ""
+
+#: functions/layout.functions.php:139
+msgid "home"
+msgstr ""
+
+#: functions/layout.functions.php:146
+msgid "category"
+msgid_plural "categories"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/layout.functions.php:199
+msgid "link"
+msgid_plural "links"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/layout.functions.php:227
+msgid "more..."
+msgstr ""
+
+#: header.php:48
+msgid "menu"
+msgstr ""
+
+#: index.php:21
+msgid "oops! this blog is fresh new and nothing to show."
+msgstr ""
+
+#: page-archives.php:49
+msgid "list of archives"
+msgstr ""
+
+#: page-archives.php:55
+msgid "by date"
+msgstr ""
+
+#: page-archives.php:76
+msgid "by author"
+msgstr ""
+
+#: page-archives.php:87
+msgid "by categories"
+msgstr ""
+
+#: page-archives.php:104
+msgid "by tags"
+msgstr ""
+
+#: search.php:4
+#, php-format
+msgid "search for &#12302;%s&#12303;"
+msgstr ""
+
+#: search.php:16
+msgid "prev"
+msgstr ""
+
+#: search.php:17
+msgid "next"
+msgstr ""
+
+#: search.php:18
+msgid "list"
+msgstr ""
+
+#: search.php:26
+#, php-format
+msgid "nothing found when searching <em>%s</em>."
+msgstr ""
+
+#: search.php:27
+msgid "you can <b>search</b> another keyword within this site."
+msgstr ""
+
+#: searchform.php:2
+msgid "search keywords"
+msgstr ""
+
+#: searchform.php:3
+msgid "search"
+msgstr ""
+
+#: yarpp-template-list.php:9
+msgid "related posts"
+msgstr ""
+
+#: yarpp-template-list.php:26
+msgid "no related posts."
+msgstr ""

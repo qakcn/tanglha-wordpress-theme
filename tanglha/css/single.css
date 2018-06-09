@@ -87,7 +87,7 @@ h6 {
 /* line 50, sass/part/_part_global.scss */
 strong, b {
   font-weight: bolder;
-  color: #700;
+  color: #400;
 }
 
 /* line 56, sass/part/_part_global.scss */
@@ -114,7 +114,7 @@ blockquote p {
 
 /* line 73, sass/part/_part_global.scss */
 kbd, tt, var, samp, code, pre.codeview {
-  font-family: Inconsolata, "WenQuanYi Micro Hei Mono", monospace;
+  font-family: Inconsolata, "Ubuntu Mono", monospace;
 }
 
 /* line 76, sass/part/_part_global.scss */
@@ -679,12 +679,8 @@ ol.comment-list #respond p a {
 ol.comment-list #respond p a:hover {
   color: #46AECE;
 }
-/* line 121, sass/part/_common_single.scss */
-ol.comment-list #respond #comment {
-  font-family: Inconsolata, "WenQuanYi Micro Hei Mono", monospace;
-}
 
-/* line 128, sass/part/_common_single.scss */
+/* line 125, sass/part/_common_single.scss */
 textarea#comment, input#author, input#email, input#url {
   box-sizing: border-box;
   width: 100%;
@@ -692,22 +688,23 @@ textarea#comment, input#author, input#email, input#url {
   border: 1px solid #ccc;
   background-color: rgba(238, 238, 238, 0.8);
   resize: vertical;
+  font-family: Inconsolata, "Ubuntu Mono", monospace;
 }
-/* line 135, sass/part/_common_single.scss */
+/* line 133, sass/part/_common_single.scss */
 textarea#comment:focus, textarea#comment:hover, input#author:focus, input#author:hover, input#email:focus, input#email:hover, input#url:focus, input#url:hover {
   background-color: rgba(248, 248, 248, 0.8);
   border-color: #46aece;
   box-shadow: 0 0 2px 0 #46aece inset;
 }
 
-/* line 142, sass/part/_common_single.scss */
+/* line 140, sass/part/_common_single.scss */
 input#submit {
   padding: 0.5em;
   border: 1px solid #ccc;
   background-color: bgcolor;
   color: #000;
 }
-/* line 147, sass/part/_common_single.scss */
+/* line 145, sass/part/_common_single.scss */
 input#submit:hover {
   color: #fff;
   border-color: #46aece;

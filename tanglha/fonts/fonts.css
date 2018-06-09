@@ -135,51 +135,6 @@
          url('Roboto/Roboto-BlackItalic.ttf') format('truetype');
 }
 
-/* Sawasdee */
-@font-face {
-    font-family: 'Sawasdee';
-    font-weight: normal;
-    font-style: normal;
-    src: local('Sawasdee Regular'),
-         local('Sawasdee'),
-         url('Sawasdee/Sawasdee.eot?#iefix') format('embedded-opentype'),
-         url('Sawasdee/Sawasdee.woff') format('woff'),
-         url('Sawasdee/Sawasdee.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Sawasdee';
-    font-weight: bold;
-    font-style: normal;
-    src: local('Sawasdee Bold'),
-         local('Sawasdee-Bold'),
-         url('Sawasdee/Sawasdee-Bold.eot?#iefix') format('embedded-opentype'),
-         url('Sawasdee/Sawasdee-Bold.woff') format('woff'),
-         url('Sawasdee/Sawasdee-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Sawasdee';
-    font-weight: normal;
-    font-style: oblique;
-    src: local('Sawasdee Oblique'),
-         local('Sawasdee-Oblique'),
-         url('Sawasdee/Sawasdee-Oblique.eot?#iefix') format('embedded-opentype'),
-         url('Sawasdee/Sawasdee-Oblique.woff') format('woff'),
-         url('Sawasdee/Sawasdee-Oblique.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Sawasdee';
-    font-weight: bold;
-    font-style: oblique;
-    src: local('Sawasdee BoldOblique'),
-         local('Sawasdee-BoldOblique'),
-         url('Sawasdee/Sawasdee-BoldOblique.eot?#iefix') format('embedded-opentype'),
-         url('Sawasdee/Sawasdee-BoldOblique.woff') format('woff'),
-         url('Sawasdee/Sawasdee-BoldOblique.ttf') format('truetype');
-}
-
 /*******************
  * Monospace Fonts *
  *******************/

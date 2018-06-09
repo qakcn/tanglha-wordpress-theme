@@ -6,7 +6,7 @@ Author: qakcn
 */
 ?>
 
-<h3>related posts</h3>
+<h3><?=__('related posts', 'tanglha') ?></h3>
 
 <?php
 if (have_posts()) {
@@ -23,7 +23,7 @@ if (have_posts()) {
 }else{
 ?>
 
-<p>no related posts.</p>
+<p><?=__('no related posts.', 'tanglha') ?></p>
 
 <?php
 }

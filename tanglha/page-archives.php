@@ -46,13 +46,13 @@ get_header();
 ?>
 
 <div class="archive-header">
-    <h1 class="page-title">list of archives</h1>
+    <h1 class="page-title"><?=__('list of archives', 'tanglha') ?></h1>
     <div class="taxonomy-description"></div>
 </div>
 
 <article class="hentry">
     <header>
-        <h2>by date</h2>
+        <h2><?=__('by date', 'tanglha') ?></h2>
     </header>
     <section class="entry">
         <ul class="list" role="tree">
@@ -73,7 +73,7 @@ get_header();
 
 <article class="hentry">
     <header>
-        <h2>by author</h2>
+        <h2><?=__('by author', 'tanglha') ?></h2>
     </header>
     <section class="entry">
         <ul class="list" role="tree"><?php wp_list_authors('exclude_admin=0&optioncount=1&title_li='); ?></ul>
@@ -84,7 +84,7 @@ get_header();
 
 <article class="hentry">
     <header>
-        <h2>by categories</h2>
+        <h2><?=__('by categories', 'tanglha') ?></h2>
     </header>
     <section class="entry">
         <ul class="list" role="tree">
@@ -101,7 +101,7 @@ get_header();
 
 <article class="hentry">
     <header>
-        <h2>by tags</h2>
+        <h2><?=__('by tags', 'tanglha') ?></h2>
     </header>
     <section class="entry">
         <ul class="tag-list">

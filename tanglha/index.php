@@ -18,7 +18,7 @@ if (have_posts()) {
     ?>
     <article class="hentry">
         <section class="entry">
-            <p>oops! this blog is fresh new and nothing to show.</p>
+            <p><?=__('oops! this blog is fresh new and nothing to show.', 'tanglha') ?></p>
         </section>
     </article>
     <?php

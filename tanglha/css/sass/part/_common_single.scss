@@ -118,9 +118,6 @@ ol.comment-list {
             font-size: 0.8em;
             @include link;
         }
-        #comment {
-            font-family: $monofonts;
-        }
     }
 }
 
@@ -132,6 +129,7 @@ textarea#comment, input#author, input#email, input#url {
     border: 1px solid $bdrcolor;
     background-color: $bgcolor;
     resize: vertical;
+    font-family: $monofonts;
     &:focus,&:hover {
         background-color: $secondary_bgcolor;
         border-color: $input_bdrcolor;

@@ -9,7 +9,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'page_background_color', array(
-        'label'       => 'page background color',
+        'label'       => __('page background color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -19,7 +19,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'actionbar_background_color', array(
-        'label'       => 'top-bar background color',
+        'label'       => __('top-bar background color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -29,7 +29,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'content_background_color', array(
-        'label'       => 'content background color',
+        'label'       => __('content background color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -39,7 +39,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'textcolor', array(
-        'label'       => 'text color',
+        'label'       => __('text color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -49,7 +49,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_textcolor', array(
-        'label'       => 'secondary text color',
+        'label'       => __('secondary text color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -59,7 +59,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
-        'label'       => 'link color',
+        'label'       => __('link color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -69,7 +69,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_hover_color', array(
-        'label'       => 'link hover color',
+        'label'       => __('link hover color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -79,7 +79,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'title_link_color', array(
-        'label'       => 'title color',
+        'label'       => __('title color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -89,7 +89,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'title_link_hover_color', array(
-        'label'       => 'title hover color',
+        'label'       => __('title hover color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -99,7 +99,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_link_color', array(
-        'label'       => 'secondary link color',
+        'label'       => __('secondary link color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -109,7 +109,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'secondary_link_hover_color', array(
-        'label'       => 'secondary link hover color',
+        'label'       => __('secondary link hover color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -119,7 +119,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'line_color', array(
-        'label'       => 'line color',
+        'label'       => __('line color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -129,7 +129,7 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'quote_background_color', array(
-        'label'       => 'quote background color',
+        'label'       => __('quote background color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
@@ -139,14 +139,14 @@ function tanglha_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'quote_textcolor', array(
-        'label'       => 'quote text color',
+        'label'       => __('quote text color', 'tanglha'),
         'section'     => 'colors',
     ) ) );
 
     // Add theme infomation customize
     $wp_customize->add_section('tanglha_info', array(
-        'title' => 'information',
-        'description' => 'gather some information that will be shown',
+        'title' => __('information', 'tanglha'),
+        'description' => __('gather some information that will be shown', 'tanglha'),
     ));
 
     $wp_customize->add_setting('tanglha_info_host', array(
@@ -155,7 +155,7 @@ function tanglha_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control('tanglha_info_host_control', array(
-        'label' => 'hosted on',
+        'label' => __('hosted on', 'tanglha'),
         'section' => 'tanglha_info',
         'type' => 'textarea',
         'settings' => 'tanglha_info_host',
@@ -167,7 +167,7 @@ function tanglha_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control('tanglha_info_license_control', array(
-        'label' => 'license under',
+        'label' => __('license under', 'tanglha'),
         'section' => 'tanglha_info',
         'type' => 'textarea',
         'settings' => 'tanglha_info_license',
@@ -179,7 +179,7 @@ function tanglha_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control('tanglha_info_statistic_control', array(
-        'label' => 'statistic code',
+        'label' => __('statistic code', 'tanglha'),
         'section' => 'tanglha_info',
         'type' => 'textarea',
         'settings' => 'tanglha_info_statistic',
@@ -259,7 +259,7 @@ function tanglha_color_styles() {
 
 }
 
-function tanglha_info($name) {
+function tanglha_info($name, $noecho=false) {
     $default = array(
         'host' => 'my server',
         'license' => '<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 4.0</a>',
@@ -270,7 +270,7 @@ function tanglha_info($name) {
 
     $value = wp_parse_args(array($name => $value), $default);
 
-    echo $value[$name];
+    return $value[$name];
 }
 
 function tanglha_sanitize_info($str) {

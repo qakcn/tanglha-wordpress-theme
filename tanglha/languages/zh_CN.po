@@ -1,0 +1,335 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tanglha 1.0 zh_CN\n"
+"POT-Creation-Date: 2018-06-09 21:22+0800\n"
+"PO-Revision-Date: 2018-06-09 21:26+0800\n"
+"Last-Translator: \n"
+"Language-Team: qakcn\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: css\n"
+"X-Poedit-SearchPathExcluded-1: fonts\n"
+"X-Poedit-SearchPathExcluded-2: js\n"
+"X-Poedit-SearchPathExcluded-3: images\n"
+"X-Poedit-SearchPathExcluded-4: lang\n"
+
+#: 404.php:13
+#, php-format
+msgid "%s not found."
+msgstr "%s未找到。"
+
+#: 404.php:14
+msgid ""
+"you can <a onclick=\"event.stopPropagation();document.getElementById('ga-"
+"search').click();\" href=\"javascript:void(0);\">search</a> within this site."
+msgstr ""
+"你可以在本站内<a onclick=\"event.stopPropagation();document."
+"getElementById('ga-search').click();\" href=\"javascript:void(0);\">搜索</"
+"a>。"
+
+#: 404.php:15 search.php:28
+#, php-format
+msgid ""
+"as well you can seach this site using <a href=\"https://www.google.com/"
+"search?q=site%%3A%s\">Google</a>, <a href=\"https://www.bing.com/search?"
+"q=site%%3A%s\">Bing</a>, <a href=\"https://search.yahoo.com/search?p=site%%3A"
+"%s\">Yahoo!</a> or <a href=\"https://duckduckgo.com/?q=site%%3A%s"
+"\">DuckDuckGo</a>."
+msgstr ""
+"你也可以使用<a href=\"https://www.google.com/search?q=site%%3A%s\">Google</"
+"a>, <a href=\"https://www.bing.com/search?q=site%%3A%s\">Bing</a>, <a href="
+"\"https://search.yahoo.com/search?p=site%%3A%s\">Yahoo!</a>或<a href="
+"\"https://duckduckgo.com/?q=site%%3A%s\">DuckDuckGo</a>来搜索本站。"
+
+#: archive.php:28
+msgid "nothing here."
+msgstr "这里什么都没有。"
+
+#: comments.php:10
+msgid "no comment"
+msgstr "没有评论"
+
+#: comments.php:13
+msgid "1 comment"
+msgstr "有1条评论"
+
+#: comments.php:16
+#, php-format
+msgid "%d comments"
+msgstr "有%d条评论"
+
+#: comments.php:39
+msgid "reply"
+msgstr "回复"
+
+#: comments.php:40
+#, php-format
+msgid "reply to %s"
+msgstr "给%s回复"
+
+#: comments.php:41
+msgid "cancel"
+msgstr "取消"
+
+#: comments.php:42
+msgid "submit"
+msgstr "提交"
+
+#: comments.php:43
+msgid "leave your comment here"
+msgstr "在这里留下评论"
+
+#: comments.php:44
+#, php-format
+msgid "need to be <a href=\"%s\">logged in</a> to comment."
+msgstr "要<a href=\"%s\">登录</a> 才能评论。"
+
+#: comments.php:45
+#, php-format
+msgid ""
+"logged in as <a href=\"%s\">%s</a> (<a href=\"%s\" title=\"log out\">log "
+"out</a>)."
+msgstr ""
+"已以<a href=\"%s\">%s</a>的身份登录（<a href=\"%s\" title=\"log out\">登出</"
+"a>）。"
+
+#: comments.php:46
+msgid "your email will keep secret. (* required)."
+msgstr "你的Email不会被展示。（* 必填）"
+
+#: comments.php:47
+#, php-format
+msgid ""
+"you can use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: <code>%s</code>."
+msgstr ""
+"你可以使用这些<abbr title=\"HyperText Markup Language（超文本标记语"
+"言）\">HTML</abbr>标签和属性：<code>%s</code>."
+
+#: footer.php:6
+msgid ""
+"proudly powered by <a href=\"http://wordpress.org/\" target=\"_blank"
+"\">WordPress</a>."
+msgstr ""
+"本站自豪地使用<a href=\"http://wordpress.org/\" target=\"_blank\">WordPress</"
+"a>。"
+
+#: footer.php:7
+msgid "theme by <a href=\"https://tsukkomi.org/\" target=\"_blank\">qakcn</a>."
+msgstr ""
+"本主题由<a href=\"https://tsukkomi.org/\" target=\"_blank\">qakcn</a>开发。"
+
+#: footer.php:8
+#, php-format
+msgid "license under %s."
+msgstr "本站文章在%s下授权。"
+
+#: footer.php:9
+#, php-format
+msgid "hosted on %s."
+msgstr "本站由%s主机驱动。"
+
+#: footer.php:15
+#, php-format
+msgid ""
+"documented as <a href=\"http://www.miibeian.gov.cn\" target=\"_blank\">%s</"
+"a>."
+msgstr ""
+"本站备案为<a href=\"http://www.miibeian.gov.cn\" target=\"_blank\">%s</a>。"
+
+#: functions/customizer.functions.php:12
+msgid "page background color"
+msgstr "页面背景颜色"
+
+#: functions/customizer.functions.php:22
+msgid "top-bar background color"
+msgstr "顶栏背景颜色"
+
+#: functions/customizer.functions.php:32
+msgid "content background color"
+msgstr "内容背景颜色"
+
+#: functions/customizer.functions.php:42
+msgid "text color"
+msgstr "文字颜色"
+
+#: functions/customizer.functions.php:52
+msgid "secondary text color"
+msgstr "次要文字颜色"
+
+#: functions/customizer.functions.php:62
+msgid "link color"
+msgstr "链接颜色"
+
+#: functions/customizer.functions.php:72
+msgid "link hover color"
+msgstr "链接悬停颜色"
+
+#: functions/customizer.functions.php:82
+msgid "title color"
+msgstr "标题颜色"
+
+#: functions/customizer.functions.php:92
+msgid "title hover color"
+msgstr "标题悬停颜色"
+
+#: functions/customizer.functions.php:102
+msgid "secondary link color"
+msgstr "次要链接颜色"
+
+#: functions/customizer.functions.php:112
+msgid "secondary link hover color"
+msgstr "次要链接悬停颜色"
+
+#: functions/customizer.functions.php:122
+msgid "line color"
+msgstr "线条颜色"
+
+#: functions/customizer.functions.php:132
+msgid "quote background color"
+msgstr "引用块背景颜色"
+
+#: functions/customizer.functions.php:142
+msgid "quote text color"
+msgstr "引用块文字颜色"
+
+#: functions/customizer.functions.php:148
+msgid "information"
+msgstr "信息"
+
+#: functions/customizer.functions.php:149
+msgid "gather some information that will be shown"
+msgstr "收集一些用于展示的信息"
+
+#: functions/customizer.functions.php:158
+msgid "hosted on"
+msgstr "主机商"
+
+#: functions/customizer.functions.php:170
+msgid "license under"
+msgstr "授权协议"
+
+#: functions/customizer.functions.php:182
+msgid "statistic code"
+msgstr "统计代码"
+
+#: functions/layout.functions.php:52
+#, php-format
+msgid "link to &#12302;%s&#12303;"
+msgstr "链接到&#12302;%s&#12303;"
+
+#: functions/layout.functions.php:70
+#, php-format
+msgid "read more about &#12302;%s&#12303;"
+msgstr "阅览关于&#12302;%s&#12303;的更多内容"
+
+#: functions/layout.functions.php:70 functions/layout.functions.php:72
+msgid "read more..."
+msgstr "阅览更多内容……"
+
+#: functions/layout.functions.php:115
+msgid "dashboard"
+msgstr "仪表盘"
+
+#: functions/layout.functions.php:123
+msgid "guest"
+msgstr "来宾"
+
+#: functions/layout.functions.php:124
+msgid "you're welcomingly welcome"
+msgstr "热烈欢迎"
+
+#: functions/layout.functions.php:139
+msgid "home"
+msgstr "主页"
+
+#: functions/layout.functions.php:146
+msgid "category"
+msgid_plural "categories"
+msgstr[0] "分类"
+
+#: functions/layout.functions.php:199
+msgid "link"
+msgid_plural "links"
+msgstr[0] "链接"
+
+#: functions/layout.functions.php:227
+msgid "more..."
+msgstr "更多……"
+
+#: header.php:48
+msgid "menu"
+msgstr "菜单"
+
+#: index.php:21
+msgid "oops! this blog is fresh new and nothing to show."
+msgstr "哎呀！这个博客还很新，啥都没有。"
+
+#: page-archives.php:49
+msgid "list of archives"
+msgstr "存档列表"
+
+#: page-archives.php:55
+msgid "by date"
+msgstr "按日期"
+
+#: page-archives.php:76
+msgid "by author"
+msgstr "按作者"
+
+#: page-archives.php:87
+msgid "by categories"
+msgstr "按分类"
+
+#: page-archives.php:104
+msgid "by tags"
+msgstr "按标签"
+
+#: search.php:4
+#, php-format
+msgid "search for &#12302;%s&#12303;"
+msgstr "搜索&#12302;%s&#12303;"
+
+#: search.php:16
+msgid "prev"
+msgstr "前一页"
+
+#: search.php:17
+msgid "next"
+msgstr "下一页"
+
+#: search.php:18
+msgid "list"
+msgstr "列表"
+
+#: search.php:26
+#, php-format
+msgid "nothing found when searching <em>%s</em>."
+msgstr "搜索<em>%s</em>时没有找到任何东西。"
+
+#: search.php:27
+msgid "you can <b>search</b> another keyword within this site."
+msgstr "你可以<b>搜索</b>其他关键词。"
+
+#: searchform.php:2
+msgid "search keywords"
+msgstr "搜索关键词"
+
+#: searchform.php:3
+msgid "search"
+msgstr "搜索"
+
+#: yarpp-template-list.php:9
+msgid "related posts"
+msgstr "相关文章"
+
+#: yarpp-template-list.php:26
+msgid "no related posts."
+msgstr "没有相关文章。"

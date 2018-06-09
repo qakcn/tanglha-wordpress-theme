@@ -12,10 +12,10 @@
     <title><?php wp_title(''); ?></title>
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php echo esc_url(get_bloginfo('pingback_url')); ?>">
+    <link rel="pingback" href="<?=esc_url(get_bloginfo('pingback_url')); ?>">
 
     <!--[if lt IE 9]>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+    <script src="<?=esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
     <![endif]-->
     <script>(function(){var cl = document.documentElement.classList;cl.remove('no-js');cl.add('js');})();</script>
     <script>
@@ -45,7 +45,7 @@
 <body <?php body_class() ?> autoload-background="<?php tanglha_header(); ?>">
     <header class="main">
         <aside id="global-actionbar">
-            <button id="ga-main" title="menu" class="iconfont" aria-haspopup="true" global-menu-button>&#58881;</button>
+            <button id="ga-main" title="<?=__('menu', 'tanglha') ?>" class="iconfont" aria-haspopup="true" global-menu-button>&#58881;</button>
             <h1><?php bloginfo('name'); ?></h1>
             <p><?php bloginfo('description'); ?></p>
             <?php get_search_form(); ?>

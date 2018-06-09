@@ -25,7 +25,7 @@ if (have_posts()) {
     ?>
     <article class="hentry">
         <section class="entry">
-            <p>nothing here.</p>
+            <p><?=__('nothing here.', 'tanglha') ?></p>
         </section>
     </article>
     <?php
