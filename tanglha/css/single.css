@@ -16,7 +16,7 @@ body {
   min-width: 300px;
   color: #000;
   font-family: Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   margin-top: 3.5em;
 }
 
@@ -56,69 +56,68 @@ a:hover {
 /* line 40, sass/part/_part_global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.625em;
-  font-family: "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", serif;
   font-weight: bolder;
 }
 
-/* line 45, sass/part/_part_global.scss */
+/* line 44, sass/part/_part_global.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 46, sass/part/_part_global.scss */
+/* line 45, sass/part/_part_global.scss */
 h3 {
   font-size: 1.375em;
 }
 
-/* line 47, sass/part/_part_global.scss */
+/* line 46, sass/part/_part_global.scss */
 h4 {
   font-size: 1.25em;
 }
 
-/* line 48, sass/part/_part_global.scss */
+/* line 47, sass/part/_part_global.scss */
 h5 {
   font-size: 1.125em;
 }
 
-/* line 49, sass/part/_part_global.scss */
+/* line 48, sass/part/_part_global.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 51, sass/part/_part_global.scss */
+/* line 50, sass/part/_part_global.scss */
 strong, b {
   font-weight: bolder;
   color: #700;
 }
 
-/* line 57, sass/part/_part_global.scss */
+/* line 56, sass/part/_part_global.scss */
 mark, ins {
   background-color: rgba(255, 249, 192, 0.8);
   text-decoration: none;
 }
 
-/* line 61, sass/part/_part_global.scss */
+/* line 60, sass/part/_part_global.scss */
 del.blackout {
   background-color: #000;
   text-decoration: none;
 }
 
-/* line 66, sass/part/_part_global.scss */
+/* line 65, sass/part/_part_global.scss */
 blockquote {
   border-left: 1em solid #ccc;
   padding: 1em;
 }
-/* line 69, sass/part/_part_global.scss */
+/* line 68, sass/part/_part_global.scss */
 blockquote p {
   margin: 0.5em 0;
 }
 
-/* line 74, sass/part/_part_global.scss */
+/* line 73, sass/part/_part_global.scss */
 kbd, tt, var, samp, code, pre.codeview {
   font-family: Inconsolata, "WenQuanYi Micro Hei Mono", monospace;
 }
 
-/* line 77, sass/part/_part_global.scss */
+/* line 76, sass/part/_part_global.scss */
 kbd {
   border: 1px solid #ccc;
   border-radius: 10%;
@@ -130,7 +129,7 @@ kbd {
   text-transform: capitalize;
 }
 
-/* line 87, sass/part/_part_global.scss */
+/* line 86, sass/part/_part_global.scss */
 code {
   margin: 0.5em;
   padding: 0 0.5em;
@@ -138,12 +137,12 @@ code {
   color: #333;
 }
 
-/* line 93, sass/part/_part_global.scss */
+/* line 92, sass/part/_part_global.scss */
 pre.aa {
   font-family: 'MS PGothic', monospace;
 }
 
-/* line 96, sass/part/_part_global.scss */
+/* line 95, sass/part/_part_global.scss */
 pre code {
   display: block;
   margin: 0;
@@ -164,7 +163,7 @@ pre code::selection {
   background-color: #C6E3FF;
 }
 
-/* line 107, sass/part/_part_global.scss */
+/* line 106, sass/part/_part_global.scss */
 .wp-caption {
   /* border: 1px solid $bdrcolor; */
   margin: 1em;
@@ -172,14 +171,14 @@ pre code::selection {
   background-color: rgba(238, 238, 238, 0.8);
 }
 
-/* line 113, sass/part/_part_global.scss */
+/* line 112, sass/part/_part_global.scss */
 .wp-caption-text, .gallery-caption {
   font-size: 0.8em;
   color: #333;
   text-align: center;
 }
 
-/* line 119, sass/part/_part_global.scss */
+/* line 118, sass/part/_part_global.scss */
 .gallery {
   /* border: 1px solid $bdrcolor; */
   background-color: rgba(238, 238, 238, 0.8);
@@ -191,7 +190,7 @@ pre code::selection {
   display: -webkit-flex;
   display: flex;
 }
-/* line 126, sass/part/_part_global.scss */
+/* line 125, sass/part/_part_global.scss */
 .gallery .gallery-item {
   display: inline-block;
   margin: 1em 0 1em 1em;
@@ -199,28 +198,28 @@ pre code::selection {
   background-color: rgba(248, 248, 248, 0.8);
   /* border: 1px solid $bdrcolor; */
 }
-/* line 132, sass/part/_part_global.scss */
+/* line 131, sass/part/_part_global.scss */
 .gallery .gallery-item:last-child {
   margin-right: 1em;
 }
 
-/* line 138, sass/part/_part_global.scss */
+/* line 137, sass/part/_part_global.scss */
 .alignleft {
   float: left;
 }
 
-/* line 142, sass/part/_part_global.scss */
+/* line 141, sass/part/_part_global.scss */
 .alignright {
   float: right;
 }
 
-/* line 146, sass/part/_part_global.scss */
+/* line 145, sass/part/_part_global.scss */
 .aligncenter {
   display: block;
   margin: auto;
 }
 
-/* line 151, sass/part/_part_global.scss */
+/* line 150, sass/part/_part_global.scss */
 .main {
   margin: auto;
   width: 100%;
@@ -228,7 +227,7 @@ pre code::selection {
   max-width: 1000px;
 }
 
-/* line 157, sass/part/_part_global.scss */
+/* line 156, sass/part/_part_global.scss */
 .blur, header.main.blur > * {
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -293,25 +292,24 @@ aside#global-actionbar form#search-form input.search-field {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1em;
-  color: #000;
-  background-color: #eee;
+  color: #fff;
+  background-color: dodgerblue;
   margin: 0.5em 0;
   padding: 0 0.5em;
   border: none;
+  border-bottom: 2px solid #fff;
   -webkit-flex-grow: 1;
   flex-grow: 1;
   line-height: 200%;
   width: 10em;
   transition: width 0.2s cubic-bezier(0.79, 0.14, 0.15, 0.86) 0s;
   text-overflow: ellipsis;
-  box-shadow: 0 0 5px 0 dodgerblue inset;
 }
 /* line 62, sass/part/_part_header.scss */
 aside#global-actionbar form#search-form input.search-field:focus, aside#global-actionbar form#search-form input.search-field:hover {
-  background-color: #f8f8f8;
   width: 20em;
 }
-/* line 67, sass/part/_part_header.scss */
+/* line 66, sass/part/_part_header.scss */
 aside#global-actionbar form#search-form input.search-submit {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -330,13 +328,13 @@ aside#global-actionbar form#search-form input.search-submit {
   font-family: iconfont;
 }
 
-/* line 73, sass/part/_part_header.scss */
+/* line 72, sass/part/_part_header.scss */
 header.main.blur, header.main.blur > header.main {
   -webkit-filter: none;
   filter: none;
 }
 
-/* line 80, sass/part/_part_header.scss */
+/* line 79, sass/part/_part_header.scss */
 header.main img {
   width: 100%;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
@@ -603,7 +601,7 @@ ol.comment-list li.pingback article.comment-body div.comment-content p {
   margin: 0;
 }
 /* line 69, sass/part/_common_single.scss */
-ol.comment-list li.pingback div.reply {
+ol.comment-list li.pingback footer.comment-meta div.comment-metadata, ol.comment-list li.pingback div.reply {
   display: none;
 }
 /* line 74, sass/part/_common_single.scss */
@@ -616,9 +614,8 @@ ol.comment-list ol.children {
 /* line 80, sass/part/_common_single.scss */
 ol.comment-list article.comment-body {
   margin: 0 1em;
-  font-family: Roboto Slab, Roboto, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", serif, sans-serif;
 }
-/* line 85, sass/part/_common_single.scss */
+/* line 84, sass/part/_common_single.scss */
 ol.comment-list article.comment-body footer.comment-meta div.comment-author img.avatar {
   width: 5em;
   height: auto;
@@ -626,12 +623,12 @@ ol.comment-list article.comment-body footer.comment-meta div.comment-author img.
   border-radius: 50%;
   float: left;
 }
-/* line 92, sass/part/_common_single.scss */
+/* line 91, sass/part/_common_single.scss */
 ol.comment-list article.comment-body footer.comment-meta div.comment-author span.says {
   color: #666;
   font-size: 0.8em;
 }
-/* line 97, sass/part/_common_single.scss */
+/* line 96, sass/part/_common_single.scss */
 ol.comment-list article.comment-body footer.comment-meta div.comment-metadata {
   font-size: 0.8em;
 }
@@ -643,8 +640,9 @@ ol.comment-list article.comment-body footer.comment-meta div.comment-metadata a 
 ol.comment-list article.comment-body footer.comment-meta div.comment-metadata a:hover {
   color: #46AECE;
 }
-/* line 102, sass/part/_common_single.scss */
+/* line 101, sass/part/_common_single.scss */
 ol.comment-list article.comment-body div.comment-content {
+  font-family: Roboto Slab, Roboto, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", serif, sans-serif;
   margin-left: 6em;
 }
 /* line 105, sass/part/_common_single.scss */
@@ -907,7 +905,7 @@ aside#global-menu {
   z-index: 9999;
   font-size: 1.5em;
   overflow: auto;
-  font-family: Sawasdee, "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
+  font-family: Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "PingFang TC", STXihei, STHeiti, "Microsoft YaHei", sans-serif;
 }
 /* line 32, sass/part/_part_sidebar.scss */
 aside#global-menu.hide {

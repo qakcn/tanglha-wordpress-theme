@@ -48,19 +48,18 @@ aside#global-actionbar {
             &.search-field {
                 @include box-sizing(border-box);
                 font-size: 1em;
-                color: $color;
-                background-color: $bgcolor_no;
+                color: $header_bar_color;
+                background-color: $header_bar_bgcolor;
                 margin: 0.5em 0;
                 padding: 0 0.5em;
                 border: none;
+                border-bottom: 2px solid $header_bar_color;
                 @include flex-grow(1);
                 line-height: 200%;
                 width: 10em;
                 transition: width $transition_params;
                 text-overflow: ellipsis;
-                box-shadow: 0 0 5px 0 $header_bar_bgcolor inset;
                 &:focus, &:hover {
-                    background-color: $secondary_bgcolor_no;
                     width: 20em;
                 }
             }

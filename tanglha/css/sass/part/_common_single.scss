@@ -66,7 +66,7 @@ ol.comment-list {
                     margin: 0;
                 }
             }
-            div.reply {
+            footer.comment-meta div.comment-metadata, div.reply {
                 display: none;
             }
         }
@@ -79,7 +79,6 @@ ol.comment-list {
     }
     article.comment-body {
         margin: 0 1em;
-        font-family: $normalfonts;
         footer.comment-meta {
             div.comment-author{
                 img.avatar {
@@ -100,6 +99,7 @@ ol.comment-list {
             }
         }
         div.comment-content {
+            font-family: $normalfonts;
             margin-left: 6em;
         }
         div.reply {
