@@ -1,6 +1,5 @@
 /* Article */
 article {
-    font-family: $normalfonts;
     &.hentry {
         margin: 1em 0;
         box-shadow: 1px 1px 4px 0 $shadowcolor;
@@ -11,6 +10,7 @@ article {
             margin: 0 1em;
             h2 {
                 margin: 0;
+                font-family: $normalfonts;
                 a {
                     text-decoration: none;
                     color: $article_header_color;
@@ -101,6 +101,7 @@ article {
             }
         }
         section.entry {
+            font-family: $normalfonts;
             padding: 0 1em;
             line-height: 150%;
             span.more {

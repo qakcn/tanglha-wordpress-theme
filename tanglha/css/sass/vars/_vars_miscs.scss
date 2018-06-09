@@ -3,6 +3,7 @@ $chinesefonts: 'Noto Serif CJK SC', 'Noto Serif CJK TC', 'Noto Serif CJK JP', 'N
 $normalfonts: Roboto Slab, Roboto, $chinesefonts, serif, sans-serif;
 $chinesefonts_sans: 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Noto Sans CJK JP', 'Noto Sans CJK KR', 'PingFang SC', 'PingFang TC', STXihei, STHeiti, 'Microsoft YaHei';
 $normalfonts_sans: Roboto, $chinesefonts_sans, sans-serif;
+$monofonts: Inconsolata, 'WenQuanYi Micro Hei Mono', monospace;
 
 /* others */
 $min_width: 300px;

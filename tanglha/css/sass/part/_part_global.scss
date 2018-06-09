@@ -39,7 +39,7 @@ a {
 
 h1 {
     font-size: 1.625em;
-    font-family: Sawasdee, $chinesefonts, sans-serif;
+    font-family: $chinesefonts, serif;
     font-weight: bolder;
 }
 h2 { @extend h1; font-size: 1.5em;}
@@ -72,7 +72,7 @@ blockquote {
 }
 
 kbd, tt, var, samp, code, pre.codeview {
-    font-family: Inconsolata, 'WenQuanYi Micro Hei Mono', monospace;
+    font-family: $monofonts;
 }
 kbd {
     border: 1px solid #ccc;
